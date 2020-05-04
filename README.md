@@ -7,7 +7,7 @@ Solution set in C++ may come later.
 
 See the website of problems at [official site](https://leetcode.com/problemset/all/)
 
-And also the [official Chines site](https://leetcode-cn.com/problemset/all/)
+And also the [official Chinese site](https://leetcode-cn.com/problemset/all/)
 
 <br>
 
