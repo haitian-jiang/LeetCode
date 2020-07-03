@@ -1,3 +1,4 @@
+# easy
 class Solution: # 通过循环，先看前两位，如果不特殊看第一位，将值加上后抛去加过的前一/两位(采用切片)
     def romanToInt(self, s: str) -> int:
         ans = 0

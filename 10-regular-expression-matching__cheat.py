@@ -1,3 +1,4 @@
+# hard
 import re # 作弊方法
 class Solution:
     def isMatch(self, s: str, p: str) -> bool:
