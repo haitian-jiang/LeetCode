@@ -1,3 +1,4 @@
+# hard
 class Solution: # 回溯
     def is_ok(self, board, trial: str, r, c) -> bool: # 在r,c位置未填时，判断此位置填trial是否合法
         column = [board[_][c] for _ in range(9)] # r,c位置所在列
