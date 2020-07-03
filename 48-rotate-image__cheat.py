@@ -1,3 +1,4 @@
+# easy
 class Solution: # 作弊解法，题目要求直接修改输入的二维矩阵
     def rotate(self, matrix: List[List[int]]) -> None:
         """

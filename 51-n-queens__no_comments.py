@@ -1,3 +1,4 @@
+# hard
 class Solution:
     import copy
     def NQueen(self, n, k, board, solution_list):
