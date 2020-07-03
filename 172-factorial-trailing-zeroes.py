@@ -1,3 +1,4 @@
+# easy
 class Solution: # LeetCode标程遇到大数会溢出
     def trailingZeroes(self, n: int) -> int:
         ans = 0
