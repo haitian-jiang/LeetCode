@@ -1,3 +1,4 @@
+# easy
 class Solution:
     def reverse(self, x: int) -> int:
         minus = 0 # 标记输入数字是否为0
