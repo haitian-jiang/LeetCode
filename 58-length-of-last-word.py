@@ -1,3 +1,4 @@
+# easy
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         ls = s.split() # 转存为列表

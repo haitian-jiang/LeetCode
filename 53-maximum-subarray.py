@@ -1,3 +1,5 @@
+# easy
+
 '''
 超时，复杂度O(n^3)
 class Solution:

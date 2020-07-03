@@ -1,8 +1,10 @@
+# medium
+
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
 
 class Solution: # 令倒数第k个节点为新节点，尾结点接上原来头结点，倒数第k+1个节点为新的尾节点，即完成旋转
     def calc_len(self, pointer: ListNode) -> int:
