@@ -44,10 +44,8 @@ def expr2RPN(mid_expr: List[str]) -> List[str]:
             # 短路算法，先判断是否非空。把优先级高的运算符先放入逆波兰表达式
                 rpn.append(operator_stack.pop())  # 由于+和-优先级相同，要先把前面的符号放入逆波兰表达式
             operator_stack.append(token)
-
     while operator_stack:
         rpn.append(operator_stack.pop())  # 将剩余的运算符全部弹出放入逆波兰表达式
-    # print(rpn)
     return rpn
 
 
