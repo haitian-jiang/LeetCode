@@ -11,12 +11,12 @@ def do_math(operand1: int, operator: str, operand2: int) -> int:
     if operator == '*':
         return operand1 * operand2
     if operator == '/':
-        return operand1 / operand2  # 题目的意思是整除，来自于C语言中/的定义，不可以使用//，由于Python的//与C的/定义不同。
+        return operand1 / operand2
 
 
-def evalRPN(tokens) -> int:
+def evalRPN(rpn_expr) -> int:
     operand_stack = []  # 用来存储操作数的栈
-    for token in tokens:  # 索引，用来遍历tokens
+    for token in rpn_expr:  # 索引，用来遍历后缀表达式
         if token.isdigit() or token[1:].isdigit():  # 判断是否为操作数，负数去掉最前面的负号
             operand_stack.append(int(token))
         else:  # 为操作符
