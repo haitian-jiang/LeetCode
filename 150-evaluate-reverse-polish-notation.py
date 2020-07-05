@@ -3,7 +3,7 @@
 # 从左到右最先遇到的操作符即为最靠近操作数的操作符，是优先级最高的操作符。
 # 将操作数存到栈中，一旦遇到操作符就取出栈顶的两个操作数，计算结果，推入栈中，直到遍历结束后栈内只有一个操作数，即为答案。
 class Solution:
-    def calculate(self, operand1: int, operator: str, operand2: int) -> int:
+    def do_math(self, operand1: int, operator: str, operand2: int) -> int:
         if operator == '+':
             return operand1 + operand2
         if operator == '-':
@@ -21,5 +21,5 @@ class Solution:
             else:  # 为操作符
                 operand2 = operand_stack.pop()
                 operand1 = operand_stack.pop()
-                operand_stack.append(self.calculate(operand1, tokens[pointer], operand2))
+                operand_stack.append(self.do_math(operand1, tokens[pointer], operand2))
         return operand_stack[0]
