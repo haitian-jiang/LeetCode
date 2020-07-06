@@ -1,4 +1,6 @@
 # medium
+from typing import List
+
 class Solution:
     def find_min_pos(self, nums, target) -> int:
         left, right, pos = 0, len(nums) - 1, int(len(nums) / 2) # 二分查找

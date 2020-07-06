@@ -1,4 +1,5 @@
 # easy
+from typing import List
 
 '''
 超时，复杂度O(n^3)

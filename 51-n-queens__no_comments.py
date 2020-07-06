@@ -1,6 +1,6 @@
 # hard
+import copy
 class Solution:
-    import copy
     def NQueen(self, n, k, board, solution_list):
         if k == n:
             solution_list.append(copy.deepcopy(board))

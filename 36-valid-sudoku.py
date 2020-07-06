@@ -1,4 +1,6 @@
 # easy
+from typing import List
+
 import copy # 为了深拷贝board数组，切片复制为浅拷贝，给转置赋值时会出错
 class Solution:
     def is_row_valid(self, board: List[List[str]]) -> bool:
