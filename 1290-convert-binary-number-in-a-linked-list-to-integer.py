@@ -1,4 +1,7 @@
-'''2020-07-06'''
+'''
+2020-07-06
+easy
+'''
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
