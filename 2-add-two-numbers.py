@@ -1,6 +1,6 @@
 # medium
 
-'''2020-01-04'''
+'''2020-01-05'''
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):

@@ -1,6 +1,6 @@
 # medium
 
-'''2020-02-04'''
+'''2020-02-03'''
 class Solution: # 面向测试编程
     def myAtoi(self, string):
         string = string.strip() # 去除空格

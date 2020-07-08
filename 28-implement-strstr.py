@@ -1,6 +1,6 @@
 # easy
 
-'''2020-01-05'''
+'''2020-01-06'''
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         if needle == "":

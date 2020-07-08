@@ -1,6 +1,6 @@
 # easy
 
-'''2020-01-06'''
+'''2020-01-07'''
 class Solution: # 递归算法
     def countAndSay(self, n: int) -> str:
         if n == 1: # 递归出口

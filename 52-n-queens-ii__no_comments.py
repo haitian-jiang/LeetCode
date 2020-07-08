@@ -1,6 +1,6 @@
 # hard
 
-'''2020-03-26'''
+'''2020-03-31'''
 import copy
 class Solution:
     def NQueen(self, n, k, board, solution_list):
