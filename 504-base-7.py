@@ -1,3 +1,5 @@
+# easy
+
 '''2020-07-04'''
 class Solution:
     def itoa(self, num: int, base: int) -> str:

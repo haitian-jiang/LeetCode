@@ -1,4 +1,6 @@
 # easy
+
+'''2020-01-05'''
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         if needle == "":

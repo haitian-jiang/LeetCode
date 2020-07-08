@@ -1,6 +1,7 @@
 # easy
-from typing import List
 
+'''2020-01-07'''
+from typing import List
 '''
 超时，复杂度O(n^3)
 class Solution:

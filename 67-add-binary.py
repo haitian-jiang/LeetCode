@@ -1,4 +1,6 @@
 # easy
+
+'''2020-01-07'''
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
         a,b = int(a,2), int(b,2) # 字符串转数字，按二进制，得到十进制数字

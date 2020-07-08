@@ -1,4 +1,7 @@
 # easy
+
+'''2020-01-03'''
+from typing import List
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         output = ""
