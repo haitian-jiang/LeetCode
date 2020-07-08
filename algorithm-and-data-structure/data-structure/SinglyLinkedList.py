@@ -9,7 +9,7 @@ class Node:
 
 class SinglyLinkedList:
     def __init__(self, *args):
-        self.head = Node("○")  # indicates head node when be printed
+        self.head = Node('○')  # indicates head node when be printed
         self.tail = self.head
         self.length = 0
         if len(args) == 1 and isinstance(args[0], Iterable):
@@ -158,4 +158,4 @@ if __name__ == '__main__':
     a.pop()                                   # test pop()
     print('8. ', a)
 
-    print('9. ', a.find(13), a.find(20))             # test find()
+    print('9. ', a.find(13), a.find(20))      # test find()
