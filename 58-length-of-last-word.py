@@ -1,4 +1,6 @@
 # easy
+
+'''2020-01-12'''
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         ls = s.split() # 转存为列表

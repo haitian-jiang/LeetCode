@@ -1,4 +1,6 @@
 # easy
+
+'''2020-02-03'''
 from typing import List
 
 import copy # 为了深拷贝board数组，切片复制为浅拷贝，给转置赋值时会出错

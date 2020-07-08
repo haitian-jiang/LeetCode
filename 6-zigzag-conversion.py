@@ -1,4 +1,6 @@
 # medium
+
+'''2020-04-21'''
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         all_list=[]  # contains lists, each list is a row

@@ -1,5 +1,7 @@
 # easy
+
+'''2020-01-12'''
+import math
 class Solution:
     def mySqrt(self, x: int) -> int:
-        import math
         return int(math.sqrt(x))

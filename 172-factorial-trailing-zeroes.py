@@ -1,4 +1,6 @@
 # easy
+
+'''2020-02-13'''
 class Solution: # LeetCode标程遇到大数会溢出
     def trailingZeroes(self, n: int) -> int:
         ans = 0

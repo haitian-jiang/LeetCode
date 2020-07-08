@@ -26,6 +26,7 @@ class Solution:
 
 '''
 
+'''2020-02-01'''
 class Solution: # 动态规划解法，复杂度O(n)
     def maxSubArray(self, nums: List[int]) -> int:
         for i in range(1,len(nums)): # 更新过的num[i]表示以i结尾的子序列和的最大值，最终答案为更新后num中的最大值即可
