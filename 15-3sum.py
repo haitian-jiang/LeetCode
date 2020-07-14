@@ -48,3 +48,34 @@ from typing import List
 #                 triples.append(triple)
 #     return triples
 
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        if not nums or nums[0] > 0 or nums[-1] < 0:  # 全正或全负或空
+            return []
+        triples = []
+        last = nums[0] - 1
+        for first in range(len(nums) - 2):
+            if nums[first] == last:
+                continue  # 去重
+            second = first + 1  # 双指针从两边向中间搜索和为nums[first]的数对
+            third = len(nums) - 1
+            while second < third:
+                sum = nums[first] + nums[second] + nums[third]
+                current_second = nums[second]
+                current_third = nums[third]
+                if sum < 0:
+                    while nums[second] == current_second and second < len(nums) - 1:  # 防止越界
+                        second += 1  # 去重
+                    continue
+                elif sum > 0:
+                    while nums[third] == current_third and third > 0:  # 防止越界
+                        third -= 1  # 去重
+                    continue
+                else:
+                    triples.append( [nums[first], nums[second], nums[third]] )
+                    while nums[second] == current_second and second < len(nums) - 1:
+                        second += 1
+                    while nums[third] == current_third and third > 0:
+                        third -= 1
+            last = nums[first]  # 更新上一个first
+        return triples
