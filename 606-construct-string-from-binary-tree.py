@@ -7,6 +7,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+'''2020-07-15'''
 class Solution:
     def tree2str(self, t: TreeNode) -> str:
         output = ''
