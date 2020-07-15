@@ -22,3 +22,17 @@ class Solution:
         if root.right:
             self.inorderTraversal(root.right, False)
         return self.output
+
+
+'''2020-07-15'''
+class Solution:
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        if not root:  # 空树
+            return []
+        output = []
+        if root.left:
+            output.extend(self.inorderTraversal(root.left))
+        output.append(root.val)
+        if root.right:
+            output.extend(self.inorderTraversal(root.right))
+        return output
