@@ -8,3 +8,20 @@ class Solution: # 题解抄来的，从最里面的括号对开始拆，如果�
             s = s.replace("()", "")
             s = s.replace("[]", "")
         return s == ""
+
+'''2020-07-16'''
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        for i in s:
+            if i in "([{":
+                stack.append(i)
+            else:
+                if stack and "([{".find(stack[-1]) == ")]}".find(i):
+                    stack.pop()
+                else:
+                    return False
+        if stack:
+            return False
+        return True
+
