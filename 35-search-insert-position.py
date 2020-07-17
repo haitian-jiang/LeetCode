@@ -1,8 +1,8 @@
 # easy
 
-'''2020-01-06'''
 from typing import List
 
+'''2020-01-06'''
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         if(target in nums):
@@ -13,3 +13,12 @@ class Solution:
             for i in range(len(nums)):
                 if nums[i] > target:
                     return i # 谁比它大放谁那
+
+
+'''2020-07-17'''
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        for i in range(len(nums)):
+            if nums[i] >= target:
+                return i
+        return(len(nums))  # 此数比列表里的数都大
