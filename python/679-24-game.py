@@ -1,3 +1,6 @@
+# hard
+
+'''2020-08-31'''
 class Solution:
     def judgePoint24(self, nums: List[int]) -> bool:
         if len(nums) == 1:  # outlet
