@@ -11,3 +11,8 @@ class Solution:
         for i in range(len(haystack)-length+1):
             if(haystack[i:i+length] == needle):
                 return i
+
+'''2020-08-14'''
+class Solution:
+        def strStr(self, haystack: str, needle: str) -> int:
+                    return haystack.find(needle)
