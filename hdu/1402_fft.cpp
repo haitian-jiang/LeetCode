@@ -8,7 +8,6 @@ const int MAX_LEN = 1 << 17;
 const double PI = acos(-1.0);
 Complex a[MAX_LEN];
 Complex b[MAX_LEN];
-Complex A[MAX_LEN];
 
 void recursive_fft(Complex* arr, int n, int mod){
     static Complex buffer[MAX_LEN];
@@ -42,7 +41,8 @@ void recursive_fft(Complex* arr, int n, int mod){
 }
 
 void iterative_fft(Complex* arr, int n, int mod){
-    int rev[MAX_LEN] = {0,}, log2_n = 0;
+    static int rev[MAX_LEN] = {0,}, log2_n = 0;
+    static Complex A[MAX_LEN];
     while ((1 << log2_n) < n) {log2_n++;}
     for (int i = 0; i < n; ++i) {
         rev[i]=(rev[i>>1]>>1)|((i&1)<<(log2_n-1));/*NOLINT*/
