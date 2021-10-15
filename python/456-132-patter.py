@@ -34,6 +34,7 @@ class Solution:
         return False
 
     def find132pattern(self, nums: List[int]) -> bool:
+    	"""O(n), use monotonically decreasing stack"""
         k = float("-inf")
         stack = []
         for i in range(len(nums)-1, -1, -1):
