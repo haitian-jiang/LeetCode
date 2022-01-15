@@ -33,3 +33,33 @@ class Trie:
                 return False
             node = node.next[order]
         return True
+
+
+from collections import defaultdict
+class Trie:
+
+    def __init__(self):
+        self.is_end = False
+        self.next = defaultdict(Trie)
+
+    def insert(self, word: str) -> None:
+        node = self
+        for ch in word:
+            node = node.next[ch]
+        node.is_end = True
+
+    def search(self, word: str) -> bool:
+        node = self
+        for ch in word:
+            if ch not in node.next:
+                return False
+            node = node.next[ch]
+        return node.is_end
+
+    def startsWith(self, prefix: str) -> bool:
+        node = self
+        for ch in prefix:
+            if ch not in node.next:
+                return False
+            node = node.next[ch]
+        return True
